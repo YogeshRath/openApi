@@ -23,7 +23,12 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.mastercard.developer</groupId>
+			<artifactId>mdes-digital-enablement-client</artifactId>
+			<version>1.0.0</version>
+			<scope>compile</scope>
+		</dependency>
 		
 		
 		<dependency>

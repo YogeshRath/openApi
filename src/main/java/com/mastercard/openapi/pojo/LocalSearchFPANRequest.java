@@ -1,6 +1,6 @@
 package com.mastercard.openapi.pojo;
 
-public class SearchFPANRequest {
+public class LocalSearchFPANRequest {
 
 	private String ahiId;
 	private String fiConsumerId;

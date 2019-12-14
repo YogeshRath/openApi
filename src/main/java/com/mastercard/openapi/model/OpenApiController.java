@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mastercard.openapi.pojo.SearchFPANRequest;
+import com.mastercard.openapi.pojo.LocalSearchFPANRequest;
 import com.mastercard.openapi.service.AuthenticateService;
 import com.mastercard.openapi.service.FpanService;
 
@@ -34,7 +34,7 @@ public class OpenApiController {
 			@RequestHeader(value ="X-Correlation-Id", required=true) String  correlationId,
 			@RequestHeader(value ="X-Participant-Id", required=true) String  participantId,
 			@RequestHeader(value ="X-JWS-Signature", required=false) String  jwsSignature,
-			@RequestBody SearchFPANRequest fpanRequest){
+			@RequestBody LocalSearchFPANRequest fpanRequest){
 		
 		HttpHeaders headers= new HttpHeaders();
 		headers.add("X-Request-Id", requestId);

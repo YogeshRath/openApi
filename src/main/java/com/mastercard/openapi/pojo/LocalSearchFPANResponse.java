@@ -1,6 +1,6 @@
 package com.mastercard.openapi.pojo;
 
-public class SearchFPANResponse {
+public class LocalSearchFPANResponse {
 
 	private String pan;
 	private String status;
